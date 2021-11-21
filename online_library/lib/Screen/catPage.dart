@@ -6,40 +6,50 @@ class catPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      scrollDirection: Axis.horizontal,
-      padding: EdgeInsets.all(
-        5.0,
+    return Container(
+      height: 150,
+      child: ListView(
+        shrinkWrap: true,
+        scrollDirection: Axis.horizontal,
+        padding: EdgeInsets.all(
+          5.0,
+        ),
+        children: detailes.map((e) {
+          return Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Padding(
+                padding: EdgeInsets.all(5.0),
+                child: InkWell(
+                    splashColor: Colors.white,
+                    borderRadius: BorderRadius.circular(40),
+                    onTap: () {},
+                    child: Container(
+                      width: 80.0,
+                      height: 80.0,
+                      child: Image.asset(e.image),
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        // borderRadius: BorderRadius.circular(50),
+                      ),
+                    )),
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Text(
+                e.name,
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 22,
+                    color: Colors.black87),
+              ),
+              SizedBox(height: 15,),
+              //istTile(),
+            ],
+          );
+        }).toList(),
       ),
-      children: detailes.map((e) {
-        return Column(
-          children: [
-            Padding(
-              padding: EdgeInsets.all(5.0),
-              child: InkWell(
-                  splashColor: Colors.white,
-                  borderRadius: BorderRadius.circular(40),
-                  onTap: () {},
-                  child: Container(
-                    width: 70.0,
-                    height: 70.0,
-                    child: Image.asset(e.image),
-                    decoration:
-                        BoxDecoration(shape: BoxShape.circle, color: Colors.grey
-                            // borderRadius: BorderRadius.circular(50),
-                            ),
-                  )),
-            ),
-            SizedBox(
-              height: 5,
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 2.0),
-              child: Text(e.name,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 14,color: Colors.black87),),
-            ),
-          ],
-        );
-      }).toList(),
     );
   }
 }
