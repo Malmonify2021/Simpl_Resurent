@@ -2,21 +2,20 @@ import 'catagories.dart';
 import 'data.dart';
 
 const detailes = const [
-  Catagories('cat16', 'New', '/'),
-  Catagories('cat1', 'Python', '/'),
-  Catagories('cat2', 'C#', '/'),
-  Catagories('cat3', 'C++', '/'),
-  Catagories('cat4', 'Java', '/'),
-  Catagories('cat5', 'Html', '/'),
-  Catagories('cat6', 'Swift', '/'),
-  Catagories('cat7', 'Java Script', '/'),
-  Catagories('cat8', 'CSS', '/'),
-  Catagories('cat9', 'Dart', '/'),
-  Catagories('cat11', 'PHP', '/'),
-  Catagories('cat12', 'ASP .Net', '/'),
-  Catagories('cat13', 'Flutter', '/'),
-  Catagories('cat14', 'Android Studio', '/'),
-  Catagories('cat15', 'Visual Studio', '/'),
+  Catagories('cat16', 'New', 'images/icons8_new_64.png'),
+  Catagories('cat1', 'Python', 'images/icons8_python_64.png'),
+  Catagories('cat2', 'C#', 'images/icons8_java_64.png'),
+  Catagories('cat3', 'C++', 'images/icons8_java_64.png'),
+  Catagories('cat4', 'Java', 'images/icons8_java_64.png'),
+  Catagories('cat5', 'Html', 'images/icons8_html_5_64.png'),
+  Catagories('cat6', 'Swift', 'images/icons8_swift_64.png'),
+  Catagories('cat7', 'Java Script', 'images/icons8_java_64.png'),
+  Catagories('cat8', 'CSS', 'images/icons8_java_64.png'),
+  Catagories('cat9', 'Dart', 'images/icons8_java_64.png'),
+  Catagories('cat11', 'PHP', 'images/icons8_java_64.png'),
+  Catagories('cat12', 'ASP .Net', 'images/icons8_java_64.png'),
+ 
+  
 ];
 
 
