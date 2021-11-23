@@ -21,15 +21,22 @@ class catPage extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.all(5.0),
                 child: InkWell(
-                    splashColor: Colors.white,
+                    splashColor: Colors.black87,
                     borderRadius: BorderRadius.circular(40),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, 'Pagetwo',arguments: {
+                        'id':e.id,
+                        'name':e.name,
+                      });
+
+                    },
                     child: Container(
                       width: 80.0,
                       height: 80.0,
                       child: Image.asset(e.image),
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
+                        color: Colors.black12,
                         // borderRadius: BorderRadius.circular(50),
                       ),
                     )),
